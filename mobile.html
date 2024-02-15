@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive Example</title>
+   <style>
+      body {
+         font-family: Arial, sans-serif;
+         margin: 20px;
+         background-color: #f2f2f2;
+      }
+
+      header {
+         background-color: #333;
+         color: white;
+         padding: 10px;
+         text-align: center;
+      }
+
+      main {
+         padding: 20px;
+      }
+
+      footer {
+         background-color: #333;
+         color: white;
+         padding: 10px;
+         text-align: center;
+      }
+
+      @media (min-width: 768px) {
+         /* Styles for larger screens (tablets and above) */
+         body {
+            margin: 40px;
+         }
+
+         main {
+            padding: 40px;
+         }
+      }
+
+      @media (max-width: 767px) and (min-width: 480px) {
+         /* Styles for medium-sized screens (landscape mobile and small tablets) */
+         body {
+            margin: 30px;
+         }
+
+         main {
+            padding: 30px;
+         }
+      }
+
+      @media (max-width: 479px) {
+         /* Styles for smaller screens (portrait mobile) */
+         body {
+            margin: 20px;
+         }
+
+         main {
+            padding: 20px;
+         }
+      }
+   </style>
+</head>
+<body>
+
+   <header>
+      <h1>Responsive Example</h1>
+   </header>
+
+   <main>
+      <p>This is a simple example of a responsive HTML page.</p>
+      <p>Resize your browser window or test it on different devices to see how the layout changes.</p>
+   </main>
+
+   <footer>
+      &copy; 2024 Your Website Name
+   </footer>
+
+</body>
+</html>
